@@ -25,10 +25,13 @@ class DisciplinaRepositorio {
         return this._disciplinas.find(disciplina => disciplina.codigo === codigo);
     }
 
-    inserirAlunoNaDisciplina(aluno) {
-        const alunos = disciplina.alunos;
-        alunos.push(aluno);
-        disciplina.alunos = alunos;
+    inserirAlunoNaDisciplina(disciplina, aluno) {
+            console.log('inserindo aluno repositorio');
+            const alunos = disciplina.alunos;
+            console.log('passei aq');
+            console.log(alunos);
+            alunos.push(aluno);
+            disciplina.alunos = alunos;
         
     }
     
