@@ -45,22 +45,9 @@ class DisciplinaControlador {
             this.disciplinaServico.inserirAlunoNaDisciplina(codigoDisciplina, aluno);
             this.mostrarAlunoDisciplinaNoHTML(codigoDisciplina, nomeAluno);
             alert('Aluno adicionado na disciplina!');
-            console.log(disciplina.alunos);
         } else {
             alert('Disciplina não localizada, tente novamente!');
         }
-        // const codigoDisciplina = Number(document.querySelector("#codigoExistente").value);
-        // const nomeAluno = document.querySelector("#nomeExistente").value;
-        // const disciplina = this.disciplinaServico.buscarPorCodigo(codigoDisciplina);
-        // if (disciplina) {
-        //     const aluno = new Aluno(nomeAluno);
-        //     this.disciplinaServico.inserirAlunoNaDisciplina(disciplina, aluno);
-        //     this.mostrarAlunoDisciplinaNoHTML(codigoDisciplina, nomeAluno);
-        //     alert('Aluno adicionado com sucesso!');
-        //     console.log(disciplina.alunos);
-        // } else {
-        //     alert('Disciplina não encontrada!');
-        // }
     }
 
     removerAlunoDaDisciplina(codigo, nome) {

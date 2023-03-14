@@ -30,10 +30,8 @@ class DisciplinaServico {
 
     inserirAlunoNaDisciplina(codigo, aluno) {
         const disciplina = this.repositorio.buscarPorCodigo(codigo);
-        console.log('inserindo aluno servico')
         if (disciplina !== undefined) {
             this.repositorio.inserirAlunoNaDisciplina(disciplina, aluno);
-            console.log('passei servico')
         }
     }
 

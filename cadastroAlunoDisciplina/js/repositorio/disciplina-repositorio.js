@@ -26,9 +26,7 @@ class DisciplinaRepositorio {
     }
 
     inserirAlunoNaDisciplina(disciplina, aluno) {
-            console.log('inserindo aluno repositorio');
             const alunos = disciplina.alunos;
-            console.log('passei aq');
             console.log(alunos);
             alunos.push(aluno);
             disciplina.alunos = alunos;
